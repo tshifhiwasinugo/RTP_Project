@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: rgba(21, 21, 22, 0.774);
+  background: rgba(75, 75, 77, 0.753);
 }
 header .carousel-inner .item {
   height: 100vh;
@@ -35,7 +35,12 @@ header .carousel-inner .item {
   text-transform: uppercase;
 }
 
+main {
+  margin-top: 20vh;
+}
+
 /*responsive css*/
+
 
 @media only screen and (max-width: 767px) {
   .navbar-inverse .navbar-brand {
@@ -45,166 +50,116 @@ header .carousel-inner .item {
   .navbar-collapse {
     background: rgba(0, 0, 0, 0.5);
   }
+ 
 }
 
-/* about*/
-.about {
-  margin-top: 15rem;
-}
-.container-11 {
-  display: flex;
-}
-.row-11 {
-  min-width: 20%;
-  border: 1px solid #fff;
-  margin: 10px 20px;
-  padding: 5px 15px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.row-12 {
-  min-width: 20%;
-  border: 1px solid #fff;
-  margin: 10px 20px;
-  padding: 5px 15px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.row-11,
-.row-12:hover {
-  color: #eee;
-}
+/*pricing*/
 
-.about .row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.about .row .image {
-  flex: 1 1 45rem;
-  padding: 1rem;
-}
-
-.about .row .image img {
-  width: 100%;
-  border-radius: 0.5rem;
-  border: 1px solid #edbb00;
-}
-
-.about .row .content {
-  flex: 1 1 45rem;
-}
-
-.about .row .content h3 {
-  font-size: 3.5rem;
-  color: #fff;
-}
-
-.about .row .content p {
-  font-size: 1.6rem;
-  color: #eee;
-  padding: 1rem 0;
-  line-height: 1.5;
-}
-section {
-  padding: 2rem 9%;
-}
-
-.heading {
-  text-align: center;
-  padding-bottom: 2rem;
-  color: #edbb00;
-  text-transform: uppercase;
+h3 {
   font-size: 5rem;
-}
-h4 {
-  margin: 0 auto;
+  font-weight: 900;
+  font-family: "poppins", sans-serif;
+  margin: 30px 0;
+  color: #d4aa10;
   text-align: center;
-  font-size: 2.5rem;
-  color: #fff;
-}
-p {
-  font-size: 1.6rem;
-  color: #eee;
-  padding: 1rem 0;
-  line-height: 1.5;
 }
 
-.heading span {
-  color: #edbb00;
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card {
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 100px 15px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: 0.3s linear;
+  border-radius: 1%;
+}
+
+.pricing-card-header {
+  background-color: #edbb00;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+  box-shadow: 0 0 0 26em #edba00e1;
+}
+
+.price {
+  font-size: 70px;
+  color: #0fbcf9;
+  margin: 40px 0;
+  transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+  color: #fff;
+}
+
+.pricing-card li {
+  font-size: 16px;
+  padding: 10px 0;
   text-transform: uppercase;
 }
 
-.btn {
-  margin-top: 1rem;
+.order-btn {
   display: inline-block;
-  padding: 0.8rem 3rem;
-  font-size: 1.7rem;
-  border-radius: 0.5rem;
-  background: #666;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 2px solid #0fbcf9;
+  color: #0fbcf9;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s linear;
+  text-decoration: none;
+}
+
+.order-btn:hover {
+  background-color: #0fbcf9;
   color: #fff;
-  cursor: pointer;
-  font-weight: 600;
 }
 
-.btn:hover {
-  background: #edbb00;
-  color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  .about {
-    margin-top: 20rem;
+@media screen and (max-width: 1100px) {
+  .pricing-card {
+    flex: 50%;
   }
-  .heading {
-    text-align: center;
-    padding-bottom: 2rem;
-    color: #edbb00;
-    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
     font-size: 3rem;
-  }
-  h4 {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 2rem;
-    color: #fff;
-  }
-  .about .row .content h3 {
-    font-size: 2.5rem;
-    color: #fff;
-  }
-  .btn {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.8rem 3rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    background: #666;
-    color: #fff;
-    cursor: pointer;
     font-weight: 600;
+    font-family: "poppins", sans-serif;
+    margin: 20px 10px;
+    color: #d4aa10;
   }
-
-  .btn:hover {
-    background: #edbb00;
-    color: white;
-  }
-  p {
-    font-size: 1.3rem;
-    color: #eee;
-    padding: 1rem 0;
-    line-height: 1.5;
-  }
-  .about .row .content p {
-    font-size: 1.3rem;
-    color: #eee;
-    padding: 1rem 0;
-    line-height: 1.5;
-  }
-  .container-11 {
-    display: grid;
+  main {
+    margin-top: 25vh;
   }
 }
 

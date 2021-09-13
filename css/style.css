@@ -23,7 +23,7 @@ header .carousel-inner .item {
   font-weight: 900;
 }
 .nav.navbar-nav.navbar-right {
-  margin: 25px 0;
+  margin: 15px 0;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
@@ -34,6 +34,7 @@ header .carousel-inner .item {
   color: #edbb00;
   text-transform: uppercase;
 }
+
 .banner {
   -webkit-background-size: cover;
   background-size: cover;
@@ -71,6 +72,10 @@ header .carousel-inner .item {
 .carousel-indicators .active {
   background-color: #edbb00;
   border-color: #edbb00;
+}
+
+a {
+  text-decoration: none;
 }
 /*responsive css*/
 
