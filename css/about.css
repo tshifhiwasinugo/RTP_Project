@@ -56,28 +56,34 @@ header .carousel-inner .item {
 }
 .row-11 {
   min-width: 20%;
-  background: rgb(20, 20, 20);
+  background: rgb(95, 92, 92);
   padding: 40px 20px;
   margin: 0 30px;
   font-family: sans-serif;
   color: rgba(0,0,0,0.2);
   font-size: 24px;
   position: relative;
+  border-radius: 0.5rem;
 }
 .row-12 {
   min-width: 20%;
   min-width: 20%;
-  background: rgb(20, 20, 20);
+  background: rgb(95, 92, 92);
   padding: 40px 20px;
   margin: 0 30px;
   font-family: sans-serif;
   color: rgba(0,0,0,0.2);
   font-size: 24px;
   position: relative;
+  border-radius: 0.5rem;
 }
-.row-11,
+.row-11:hover {
+  box-shadow: 0 0 11px rgba(235, 230, 230, 0.267);
+  transition: box-shadow .3s;
+}
 .row-12:hover {
-  color: #eee;
+  box-shadow: 0 0 11px rgba(235, 230, 230, 0.267);
+  transition: box-shadow .3s;
 }
 
 .about .row {
@@ -210,6 +216,10 @@ p {
   }
   .container-11 {
     display: grid;
+  }
+  .row-11, .row-12 {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
