@@ -41,6 +41,7 @@ header .carousel-inner .item {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
+  margin-top: 80px;
 }
 .carousel-caption {
   padding-bottom: 250px;
@@ -86,6 +87,14 @@ a {
   .carousel-caption h2 {
     font-size: 50px;
   }
+  .banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 0px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .navbar-inverse .navbar-brand {
@@ -106,6 +115,14 @@ a {
   }
   .carousel-caption a {
     padding: 10px 25px;
+  }
+  .banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 0px;
   }
 }
 /*footer*/
